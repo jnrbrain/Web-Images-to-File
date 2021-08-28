@@ -3,13 +3,13 @@ import re
 import requests
 import os
 
-with open("C:/Users/cengi/Desktop/send_data.csv", "r") as csv_file:
+with open("C:/Users/Administrator/Desktop/send_data.csv", "r") as csv_file:
     csv_reader=csv.reader(csv_file, delimiter=',')
     line_count = 0
     for row in csv_reader:
         if line_count == 0:
             print(f'Sütun isimleri: {", ".join(row)}')
-            local_file = "C:/Users/cengi/Desktop/"+f'{", ".join(row)}'
+            local_file = "C:/Users/Administrator/Desktop/"+f'{", ".join(row)}'
             print(local_file)
             try:
                 # Create target Directory
